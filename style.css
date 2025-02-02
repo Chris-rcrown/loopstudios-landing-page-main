@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* min-width: 1440px; */
+}
+/* styling the header */
+header{
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+}
+header nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+header li{
+    font-family: "Alata";
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+
+    &>a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        /* background-color: wheat; */
+    }
+    &>a:hover{
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 10px thick white;
+    }
+}
+    .hamburger {
+    display: none;
+}
+
+header> h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 200;
+    font-family: "Alata";
+    text-transform: uppercase;
+    border: 3px solid white;
+    line-height: 90px;
+    letter-spacing: 30px;
+    /* word-spacing: 40px; */
+    margin-top: 20vh;
+    padding: 30px;
+    width: 50vw;
+    height: 40vh;
+    align-content: center;
+    position: absolute;
+}
+
+
+/* styling the main */
+
+main{
+    background-color: white;
+    padding: 10vw;
+}
+
+.section-one{
+    display: flex;
+    
+}
+
+.interactive img{
+    position:relative;
+    width: 50vw;
+    height: 60vh;
+}
+
+.interactive-leader{
+    background-color: white;
+    padding: 100px;
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: rgb(138, 136, 136);
+    font: "Alata";
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 145%;
+    left:50%    ;
+    font-family: "Alata";
+}
+.interactive-leader h1{
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.interactive-leader p{
+    color: darkgray     ;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.creation{
+    display: flex;
+    margin-top: 20vh;
+    font-family: "Alata";
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+.creation h2{
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 20px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    align-content: center;
+
+}
+.creation a{
+    border: 2px solid rgb(60, 59, 59);
+    border-radius: 10px;
+    padding: 20px  40px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(60, 59, 59);
+}
+
+/* styling the grid section */
+
+.section-two .grid-container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow: hidden ;
+    gap: 40px;
+    width: inherit;
+}
+.grid-container>div{
+    box-sizing: border-box;
+    position: relative;
+    height: 840px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
+}
+.grid-container>div:nth-child(1){
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+}
+.grid-container>div:nth-child(2){
+    background-image: url('./images/desktop/image-night-arcade.jpg');;
+}
+.grid-container>div:nth-child(3){
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+}
+.grid-container>div:nth-child(4){
+    background-image: url('./images/desktop/image-grid.jpg');
+}
+.grid-container>div:nth-child(5){
+    background-image: url('./images/desktop/image-from-above.jpg');
+}
+.grid-container>div:nth-child(6){
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+}
+.grid-container>div:nth-child(7){
+    background-image: url('./images/desktop/image-curiosity.jpg');
+}
+.grid-container>div:nth-child(8){
+    background-image: url('./images/desktop/image-fisheye.jpg');
+}
+
+/* .grid-container div>img{
+    width: 350px;
+    height: 500px;
+} */
+
+
+.grid-container h3{
+    position: absolute;
+    bottom: 70px;
+    padding: 20px;
+    font-size: 45px;
+    font-family: "Alata";
+    color: lightgray;
+    white-space: normal;
+    word-wrap: break-word;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.grid-container a{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10vw;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Alata";
+}
+.footer-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.media ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.media li{
+    margin-left: 30px;
+    list-style: none;
+}
+.media a{
+    text-decoration: none;
+}
+.footer-media p{
+    color:hsl(0, 0%, 55%); ;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    align-self: left;
+    margin-top: 30px;
+        &>ul{
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+.footer-links li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    align-self: left;
+    margin-right: 50px;
+}
+.footer-links a{
+    color: lightgray;
+    text-decoration: none;
+    padding-right: 30px;
+
+}
+
+
+/* for smaller screens (phone and tablets) */
+
+@media (max-width : 900px) {
+   
+    header{
+        width: 100vw;
+        padding-top: 50px;
+        background-size:cover;
+        
+        background-position: top center;
+    }
+    header ul {
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    header> h1{
+        
+        font-size: 30px;
+        height: 30vh;
+        width: 85vw;
+        line-height: 38px;
+        letter-spacing: 9px;
+    }
+    main{
+        padding: 4vw;
+    }
+     .section-one{
+        flex-direction: column;
+
+       
+    }
+    .interactive img{
+        width: 90vw;
+        object-fit: contain;
+        
+    }
+    .interactive-leader{
+        display: grid;
+        gap: 5px;
+        margin-top: -10vh;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 90vw;
+        padding: 30px;
+        text-align: center;
+
+            &>h1{
+                font-weight:100;
+                font-size: 30px;
+                
+            }
+    }
+    .creation{
+        margin-top: 20vh;
+        align-items: center;
+        justify-content: center;
+
+            &>h2{
+                font-size: 30px;
+                text-align: center;
+                line-height: 5px;
+                word-spacing: 2px;
+                letter-spacing: 5px;
+            }
+            &>a{
+                display: none;
+            }
+    }
+
+    .section-two .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .grid-container>div{
+        height: 20vh;
+    }
+    .grid-container>div:nth-child(1){
+        background-image: url('./images/mobile/image-deep-earth.jpg');
+    }
+    .grid-container>div:nth-child(2){
+        background-image: url('./images/mobile/image-night-arcade.jpg');;
+    }
+    .grid-container>div:nth-child(3){
+        background-image: url('./images/mobile/image-soccer-team.jpg');
+    }
+    .grid-container>div:nth-child(4){
+        background-image: url('./images/mobile/image-grid.jpg');
+    }
+    .grid-container>div:nth-child(5){
+        background-image: url('./images/mobile/image-from-above.jpg');
+    }
+    .grid-container>div:nth-child(6){
+        background-image: url('./images/mobile/image-pocket-borealis.jpg');
+    }
+    .grid-container>div:nth-child(7){
+        background-image: url('./images/mobile/image-curiosity.jpg');
+    }
+    .grid-container>div:nth-child(8){
+        background-image: url('./images/mobile/image-fisheye.jpg');
+    }
+    .grid-container h3{
+        bottom: 15px;
+        font-size: 20px;
+        word-wrap: break-word;
+        width:40%;
+        color:hsl(0, 0%, 55%);
+    }
+    .grid-container a{
+        display: flex;
+        justify-content: center;
+        place-self: center;
+        border: 2px solid rgb(60, 59, 59);
+        width: 40vw;
+        padding: 10px  20px;
+        margin-top: -20px;
+        margin-bottom: 90px;
+        font-size: 15px;
+        font-family: "Alata";
+        text-decoration: none;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        color: rgb(60, 59, 59)
+    }
+    footer{
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .footer-links{
+        align-items: center;
+        gap: 20px;
+        align-self: center;
+            &>ul{
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }        
+    }
+    .footer-links li{
+        font-size: 15px;
+        align-self: center;
+        margin-right: 0px;
+    }
+    .footer-media{
+        gap: 20px;
+    }
+    .media{
+        margin-top: 40px;
+    }
+    .media ul{
+        gap: 25px;
+        justify-content:center;
+    }
+    .media li{
+        margin-left: 0px;
+    }
+}
