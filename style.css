@@ -283,7 +283,7 @@ footer{
 
 /* for smaller screens (phone and tablets) */
 
-@media (max-width : 900px) {
+@media (max-width : 1200px) {
    
     header{
         width: 100vw;
@@ -357,7 +357,7 @@ footer{
         grid-template-columns: 1fr;
     }
     .grid-container>div{
-        height: 20vh;
+        height: 40vh;
     }
     .grid-container>div:nth-child(1){
         background-image: url('./images/mobile/image-deep-earth.jpg');
@@ -439,5 +439,11 @@ footer{
     }
     .media li{
         margin-left: 0px;
+    }
+}
+
+@media (max-with 500px) {
+      .grid-container>div{
+        height: 20vh;
     }
 }
